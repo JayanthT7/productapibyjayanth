@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LayeredApp.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController] 
     public class ProductController : ControllerBase
     {
         private readonly IProductRepository repo;
