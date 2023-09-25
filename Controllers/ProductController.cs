@@ -26,7 +26,15 @@ namespace LayeredApp.Controllers
         public IActionResult Post(Product product)
         {
             repo.AddProduct(product);
-            return Ok("Product Addedd");
+            return Ok("Product Addedd again!");
+        }
+
+
+        [HttpDelete]
+        public IActionResult Delete(Product product)
+        {
+            repo.DeleteProduct(product.ProductId);
+            return Ok("Product Deleted boom!");
         }
     }
 }
